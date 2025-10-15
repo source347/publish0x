@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Optimization -->
+    <title>Earn Free Crypto Reading & Writing | Publish0x Official Referral</title>
+    <meta name="description" content="Join Publish0x, the leading crypto blogging platform, and start earning free crypto today. Use our exclusive referral link to maximize your rewards!">
+    <meta name="keywords" content="publish0x, earn crypto, crypto blogging, free crypto, web3 content, crypto passive income, referral link">
+    <meta name="author" content="Publish0x Promoter">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4Cg+bhX5n8J0B8C/xJ/z2oE9rV6K4L1a7OQx3+6cR7cK1gN+x3V2eB9+q9zBqR7x6O8Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        /* Custom styles for background and font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #E0E0E0; /* Light text */
+        }
+        .crypto-gradient {
+            background-image: linear-gradient(to right, #4F46E5, #8B5CF6); /* Indigo to Violet */
+        }
+        .card-glow {
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-4xl w-full mx-auto bg-gray-900 p-8 md:p-12 rounded-2xl shadow-2xl card-glow transition-all duration-500">
+        
+        <!-- Header & Main CTA -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text crypto-gradient mb-4">
+                Your Gateway to Crypto Earning: Welcome to Publish0x
+            </h1>
+            <p class="text-xl text-gray-400 mb-8">
+                Get paid in crypto just for reading articles and publishing great content. No investment required!
+            </p>
+            
+            <button id="main-cta-button" class="crypto-gradient text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out w-full md:w-auto" onclick="window.open('https://www.publish0x.com/?a=OpnelZ1bKB', '_blank');">
+                <i class="fas fa-hand-point-right mr-2"></i> Join Publish0x & Start Earning Now!
+            </button>
+        </header>
+
+        <!-- Feature Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-center">
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-t-4 border-indigo-500">
+                <i class="fas fa-book-reader text-3xl text-indigo-400 mb-3"></i>
+                <h3 class="text-xl font-semibold mb-2">Earn by Reading</h3>
+                <p class="text-gray-400 text-sm">Every time you read an article, you can tip and choose your share of the crypto reward.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-t-4 border-purple-500">
+                <i class="fas fa-pen-nib text-3xl text-purple-400 mb-3"></i>
+                <h3 class="text-xl font-semibold mb-2">Earn by Writing</h3>
+                <p class="text-gray-400 text-sm">Writers receive a portion of the tip, meaning your great content gets rewarded instantly.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-t-4 border-violet-500">
+                <i class="fas fa-coins text-3xl text-violet-400 mb-3"></i>
+                <h3 class="text-xl font-semibold mb-2">Zero Cost</h3>
+                <p class="text-gray-400 text-sm">The tips are provided by Publish0x, so you spend nothing to earn crypto.</p>
+            </div>
+        </section>
+
+        <!-- Interactive Earning Simulator (The Fun Part) -->
+        <section class="bg-gray-800 p-8 rounded-xl shadow-xl border-2 border-indigo-600">
+            <h2 class="text-3xl font-bold mb-6 text-center text-indigo-300">
+                <i class="fas fa-calculator mr-2"></i> Crypto Earning Simulator
+            </h2>
+            <p class="text-center text-gray-400 mb-6">Drag the slider to see how easy it is to earn crypto by sharing the tip!</p>
+
+            <!-- Tip Slider -->
+            <div class="mb-8">
+                <label for="tip-slider" class="block text-lg font-medium text-gray-300 mb-2">
+                    Your Share of the Tip: <span id="reader-share-display" class="font-bold text-violet-400">80%</span>
+                </label>
+                <input type="range" id="tip-slider" min="20" max="80" value="80" step="5" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer range-lg">
+            </div>
+
+            <!-- Results Display -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <p class="text-sm text-gray-400">Total Tip Value</p>
+                    <p class="text-2xl font-bold text-green-400">$<span id="total-tip">0.05</span></p>
+                </div>
+
+                <div class="bg-gray-700 p-4 rounded-lg border-r-4 border-indigo-500">
+                    <p class="text-sm text-gray-400">Your Earning (Reader)</p>
+                    <p class="text-2xl font-bold text-indigo-400">
+                        $<span id="reader-earning">0.04</span>
+                    </p>
+                </div>
+
+                <div class="bg-gray-700 p-4 rounded-lg border-l-4 border-purple-500">
+                    <p class="text-sm text-gray-400">Author Earning</p>
+                    <p class="text-2xl font-bold text-purple-400">
+                        $<span id="author-earning">0.01</span>
+                    </p>
+                </div>
+            </div>
+            
+            <p class="text-xs text-center text-gray-500 mt-4">
+                *This is a simplified simulation based on an average tip value. Actual earnings vary.
+            </p>
+        </section>
+        
+        <!-- Referral Link & Copy Function -->
+        <section class="mt-10 text-center">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-300">
+                Share the Crypto Wealth!
+            </h2>
+            <p class="text-gray-400 mb-4">
+                Use your official referral link to invite friends and earn even more crypto rewards.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-3">
+                <input type="text" id="referral-link" value="https://www.publish0x.com/?a=OpnelZ1bKB" readonly 
+                       class="w-full md:w-3/5 p-3 bg-gray-700 border border-indigo-500 rounded-xl text-indigo-300 truncate focus:ring-2 focus:ring-indigo-500">
+                
+                <button id="copy-button" class="w-full md:w-auto bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-xl transition duration-300 ease-in-out shadow-md" onclick="copyReferralLink()">
+                    <i class="fas fa-clipboard mr-2"></i> Copy Link
+                </button>
+            </div>
+            <p id="copy-message" class="text-sm text-green-400 mt-2 opacity-0 transition-opacity duration-500">Copied!</p>
+        </section>
+
+    </div>
+
+    <script>
+        const referralLink = "https://www.publish0x.com/?a=OpnelZ1bKB";
+        const totalTipValue = 0.05; // Base tip for the simulation
+
+        const slider = document.getElementById('tip-slider');
+        const readerShareDisplay = document.getElementById('reader-share-display');
+        const readerEarningSpan = document.getElementById('reader-earning');
+        const authorEarningSpan = document.getElementById('author-earning');
+
+        // Function to update the simulator based on slider value
+        function updateSimulator(value) {
+            const readerSharePercent = parseInt(value);
+            const authorSharePercent = 100 - readerSharePercent;
+            
+            // Update display
+            readerShareDisplay.textContent = `${readerSharePercent}%`;
+            
+            // Calculate earnings (rounded to 2 decimal places for visual simplicity)
+            const readerEarning = (totalTipValue * (readerSharePercent / 100)).toFixed(2);
+            const authorEarning = (totalTipValue * (authorSharePercent / 100)).toFixed(2);
+            
+            // Update earning spans
+            readerEarningSpan.textContent = readerEarning;
+            authorEarningSpan.textContent = authorEarning;
+        }
+
+        // Initial setup
+        updateSimulator(slider.value);
+
+        // Add event listener for slider movement
+        slider.addEventListener('input', (event) => {
+            updateSimulator(event.target.value);
+        });
+
+        // Function to copy the referral link
+        function copyReferralLink() {
+            const linkInput = document.getElementById('referral-link');
+            const copyMessage = document.getElementById('copy-message');
+
+            // Use the standard method for copying text
+            linkInput.select();
+            linkInput.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand('copy');
+            
+            // Show confirmation message
+            copyMessage.classList.remove('opacity-0');
+            copyMessage.classList.add('opacity-100');
+            
+            // Hide confirmation message after 2 seconds
+            setTimeout(() => {
+                copyMessage.classList.remove('opacity-100');
+                copyMessage.classList.add('opacity-0');
+            }, 2000);
+        }
+
+    </script>
+</body>
+</html>
